@@ -54,9 +54,9 @@ class ContactUs extends React.Component {
         {/* contact Us Start */}
         <div className="container">
           <div className="row justify-content-center">
-            <div className="col-lg-6 col-md-8">
+            <div className="col-lg-8 col-md-8">
               <div className="text-center mb-5">
-                <h4 className="text-uppercase mb-0">Get In Touch</h4>
+                <h2 className="text-uppercase mb-0">Get In Touch</h2>
                 <div className="my-3">
                   <img
                     src="images/title-border.png"
@@ -64,7 +64,7 @@ class ContactUs extends React.Component {
                     className="img-fluid mx-auto d-block"
                   />
                 </div>
-                <p className="text-muted f-14">
+                <p className="text-muted f-19">
                   Jika ada pertanyaan seputar BSS PRO, silahkan melalui form
                   dibawah ini.
                 </p>
@@ -76,15 +76,13 @@ class ContactUs extends React.Component {
               <div className="contact-address">
                 <h4 className="title mb-4">Contact Info</h4>
                 <p className="text-muted f-15">
-                  Sed perspici unade omnis natus error sit voluptatem
-                  accusantium doloremque minus cumque.
+                  <i className="mdi mdi-phone-classic"></i> +62 817-7415-1730
                 </p>
                 <p className="text-muted f-15 mb-4">
-                  Et harum quidem rerum facilis est et expedita sit distinctio
-                  at libero.
+                  <i className="mdi mdi-email"></i> admin@bsspro.id
                 </p>
               </div>
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-md-12">
                   <div className="contact-address">
                     <h5 className="title f-18">Address - A</h5>
@@ -93,7 +91,7 @@ class ContactUs extends React.Component {
                     </p>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="col-lg-7 offset-lg-1">
               <div className="custom-form mt-4 mt-lg-0">
@@ -169,7 +167,7 @@ class ContactUs extends React.Component {
                         type="submit"
                         id="submit"
                         name="send"
-                        className="btn btn-primary"
+                        className="btn btn-success"
                       >
                         Send Message <i className="mdi mdi-telegram ml-2" />
                       </button>

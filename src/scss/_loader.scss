@@ -8,7 +8,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(to top left, $info 0%, $primary 100%);
+    // background: linear-gradient(to top left, $info 0%, $primary 100%);
+    background: linear-gradient(to top left, $success 0%, $emerland 100%);
     z-index: 9999999;
   }
   

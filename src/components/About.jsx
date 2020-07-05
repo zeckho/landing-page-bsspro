@@ -10,7 +10,7 @@ class About extends React.Component {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-8">
               <div className="text-center mb-5">
-                <h4 className="text-uppercase mb-0">Why BSS</h4>
+                <h2 className="text-uppercase mb-0">WHY BSS</h2>
                 <div className="my-3">
                   <img
                     src="images/title-border.png"
@@ -22,20 +22,23 @@ class About extends React.Component {
             </div>
           </div>
           <div className="row align-items-center">
-            <div className="col-lg-5">
+            <div className="col-lg-5 about-img">
               <img
-                src="images/about-img.png"
+                src="images/bsspro/about.jpg"
                 alt=""
                 className="img-fluid mx-auto d-block"
               />
             </div>
             <div className="col-lg-6 offset-lg-1">
               <div className="text-muted mt-5 mt-lg-0">
-                <p className="mb-4 f-15">
-                  Trading Saham menjadi sangat mudah untuk anda karyawan,
-                  pensiunan, wirausaha, ibu rumah tangga, pegawai, dan semua
-                  profesi. Bersama BSS simple trading meraih kesempatan untuk
-                  memperoleh hidup yang lebih baik dari Trading Saham.
+                <p className="mb-4 f-20">
+                  Trading Saham menjadi sangat mudah untuk anda{" "}
+                  <b>
+                    Karyawan, Pensiunan, Wirausaha, Ibu Rumah Tangga, Pegawai,
+                    dan semua profesi
+                  </b>
+                  . Bersama BSS simple trading meraih kesempatan untuk
+                  memperoleh <b>Hidup yang Lebih Baik</b> dari Trading Saham.
                 </p>
               </div>
             </div>

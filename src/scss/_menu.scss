@@ -55,6 +55,24 @@
         color: $white;
         outline: 0;
     }
+    .top-button {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        z-index: 99;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        background-color: $emerland;
+        color: white;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+
+    .top-button:hover {
+        background-color: $warning;
+    }
 }
 
 .navbar-toggler {
@@ -68,7 +86,7 @@
 .nav .open>a:focus,
 .nav .open>a:hover {
     background-color: transparent;
-    border-color: $primary;
+    border-color: $emerland;
 }
 
 .menu-toggle {
@@ -100,7 +118,7 @@
                 }
             }
             a.active, li a:hover, li a:active {
-                color: $primary !important;
+                color: $emerland !important;
             }
         }
     }
@@ -131,7 +149,7 @@
             }
         }
         li.active a, li a:hover, li a:active {
-            color: $primary !important;
+            color: $emerland !important;
         }
     }
 }
@@ -159,7 +177,7 @@
                 }
             }
             li.active a, li a:hover, li a:active {
-                color: $primary !important;
+                color: $emerland !important;
             }
         }
         &>.container {
@@ -208,8 +226,16 @@
                 }
             }
             li.active a, li a:hover, li a:active {
-                color: $primary !important;
+                color: $emerland !important;
             }
         }
     }
 }
+
+.btn.nav-green {
+    background-color: #27ae60 !important;
+    border: 1px solid #27ae60 !important;
+    color: #ffffff;
+    box-shadow: 0 4px 20px rgba(45, 214, 183, 0.15);
+}
+

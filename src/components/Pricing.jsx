@@ -10,7 +10,7 @@ class Pricing extends React.Component {
           <div className="row justify-content-center">
             <div className="col-lg-6 col-md-8">
               <div className="text-center mb-5">
-                <h4 className="text-uppercase mb-0">Premium Member</h4>
+                <h2 className="text-uppercase mb-0">Premium Member</h2>
                 <div className="my-3">
                   <img
                     src="images/title-border.png"
@@ -18,7 +18,7 @@ class Pricing extends React.Component {
                     className="img-fluid mx-auto d-block"
                   />
                 </div>
-                <p className="text-muted f-14">
+                <p className="text-muted f-19">
                   Biaya investasi untuk memulai.
                 </p>
               </div>
@@ -27,7 +27,7 @@ class Pricing extends React.Component {
 
           <div className="row">
             <div className="col-lg-3">
-              <div className="pricing-box rounded position-relative px-4 py-3 mb-4 bg-primary ">
+              <div className="pricing-box rounded position-relative px-4 py-3 mb-4 bg-emerland ">
                 <h3 className="pricing-title title text-uppercase text-center mt-5 mb-4 text-white">
                   BENEFIT
                 </h3>
@@ -71,7 +71,7 @@ class Pricing extends React.Component {
                     <b>Rp. 250.000,-</b>
                   </span>
                 </p>
-                <a href="" className="btn btn-outline-primary">
+                <a href="#" className="btn btn-outline-warning">
                   Daftar <span className="ml-2 right-icon">&#8594;</span>
                 </a>
               </div>
@@ -99,7 +99,7 @@ class Pricing extends React.Component {
                     <b>Rp. 800.000,-</b>
                   </span>
                 </p>
-                <a href="" className="btn btn-outline-primary">
+                <a href="" className="btn btn-outline-warning">
                   Daftar <span className="ml-2 right-icon">&#8594;</span>
                 </a>
               </div>
@@ -128,7 +128,7 @@ class Pricing extends React.Component {
                     <b>Rp. 1.800.000,-</b>
                   </span>
                 </p>
-                <a href="" className="btn btn-outline-primary">
+                <a href="" className="btn btn-outline-warning">
                   Daftar <span className="ml-2 right-icon">&#8594;</span>
                 </a>
               </div>

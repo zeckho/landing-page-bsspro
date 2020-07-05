@@ -9,12 +9,24 @@ class Navbar extends React.Component {
   }
   componentDidMount() {
     Events.scrollEvent.register("begin", function () {
-      // console.log("begin", arguments);
+      console.log("begin", arguments);
     });
 
     Events.scrollEvent.register("end", function () {
-      // console.log("end", arguments);
+      console.log("end", arguments);
     });
+
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  handleScroll(event) {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById("myBtn").style.display = "block";
+    } else {
+      document.getElementById("myBtn").style.display = "none";
+    }
   }
   scrollToTop() {
     scroll.scrollToTop();
@@ -22,6 +34,7 @@ class Navbar extends React.Component {
   componentWillUnmount() {
     Events.scrollEvent.remove("begin");
     Events.scrollEvent.remove("end");
+    window.removeEventListener("scroll", this.handleScroll);
   }
 
   render() {
@@ -31,16 +44,16 @@ class Navbar extends React.Component {
           {/* <!-- LOGO --> */}
           <Link className="navbar-brand logo" to="#">
             <img
-              src="images/logo-dark.png"
+              src="images/logo-bss.png"
               alt=""
               className="logo-dark"
-              height="21"
+              height="40"
             />
             <img
-              src="images/logo-light.png"
+              src="images/logo-bss.png"
               alt=""
               className="logo-light"
-              height="21"
+              height="40"
             />
           </Link>
           <button
@@ -135,28 +148,39 @@ class Navbar extends React.Component {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link
-                  activeClass="active"
+                <a
+                  href="http://training.bsspro.id"
                   className="nav-link"
-                  to="login"
-                  spy={true}
-                  smooth={true}
-                  duration={500}
+                  rel="noopener noreferrer"
                 >
                   Login
-                </Link>
+                </a>
               </li>
             </ul>
             <div className="btn-group" role="group" aria-label="Basic example">
-              <button type="button" className="btn btn-sm btn-warning">
+              <a
+                href="https://bit.ly/FreeGroupBSS"
+                className="btn btn-sm btn-warning"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 Free Trial
-              </button>
-              <button type="button" className="btn btn-sm btn-info">
-                Open Acc. Sekuritas
-              </button>
+              </a>
+              <a
+                href="https://www.mncsekuritas.id/opening_account/sales/C6/BSS"
+                className="btn btn-sm nav-green"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Buka Akun Saham
+              </a>
             </div>
           </div>
         </div>
+
+        <button onClick={this.scrollToTop} className="top-button" id="myBtn">
+          <i className="mdi mdi-chevron-up"></i>
+        </button>
       </nav>
     );
   }

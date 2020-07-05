@@ -2,14 +2,14 @@ import React from "react";
 import { Link } from "react-scroll";
 import Typical from "react-typical";
 import { Element } from "react-scroll";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 class Hero extends React.Component {
   render() {
     return (
-      <Element
-        name="home"
-        className="hero-7-bg position-relative bg-gradient-primary"
-      >
+      <Element name="home" className="hero-7-bg position-relative bg-success">
         <div className="hero-7-bg-overlay"></div>
         <div className="container">
           <div className="row align-items-center">
@@ -25,7 +25,7 @@ class Hero extends React.Component {
                         steps={[
                           "",
                           1000,
-                          "Your Trusted Partner In Stock Treading!",
+                          "Your Trusted Partner In Stock Trading",
                           500,
                         ]}
                         loop={Infinity}
@@ -34,8 +34,8 @@ class Hero extends React.Component {
                     </span>
                   </span>
                 </h1>
-                <p className="text-light-70 mb-4 pb-2">
-                  Temukan peluan dan kemudahan belajar Trading Saham bersama
+                <p className="text-light-70 mb-4 pb-2 hero-sub-title">
+                  Temukan peluang dan kemudahan belajar Trading Saham bersama
                   kami, dengan pola analisa sederhana dan terukur.
                 </p>
                 <Link
@@ -53,12 +53,41 @@ class Hero extends React.Component {
             </div>
 
             <div className="col-lg-6">
-              <div className="mt-5 mt-lg-0">
-                <img
-                  src="images/hero-7-img.png"
-                  alt=""
-                  className="img-fluid mx-auto d-block"
-                />
+              <div className="mt-5 mt-lg-0 hero-img">
+                <OwlCarousel
+                  items={1}
+                  className="owl-theme"
+                  loop
+                  nav
+                  margin={8}
+                  autoplay={true}
+                >
+                  <img
+                    src="images/bsspro/hero-1.jpg"
+                    alt=""
+                    className="img-fluid mx-auto d-block"
+                  />
+                  <img
+                    src="images/bsspro/hero-2.jpg"
+                    alt=""
+                    className="img-fluid mx-auto d-block"
+                  />
+                  <img
+                    src="images/bsspro/hero-3.jpg"
+                    alt=""
+                    className="img-fluid mx-auto d-block"
+                  />
+                  <img
+                    src="images/bsspro/hero-4.jpg"
+                    alt=""
+                    className="img-fluid mx-auto d-block"
+                  />
+                  <img
+                    src="images/bsspro/hero-5.jpg"
+                    alt=""
+                    className="img-fluid mx-auto d-block"
+                  />
+                </OwlCarousel>
               </div>
             </div>
           </div>

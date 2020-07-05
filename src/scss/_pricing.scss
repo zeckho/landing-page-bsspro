@@ -10,14 +10,14 @@
     &:hover {
         box-shadow: 0 4px 16px rgba($black, 0.07);
         .pricing-title {
-            color: $primary;
+            color: $warning;
         }
     }
     .ribbon {
         position: absolute;
         left: 20px;
         top: 0px;
-        background: $primary;
+        background: $warning;
         padding: 8px 4px 16px 4px;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 80%, 0 100%);
@@ -25,4 +25,8 @@
     .highlight {
         color: $dark;
     }
+}
+
+.bg-emerland {
+    background-color: $emerland !important;
 }

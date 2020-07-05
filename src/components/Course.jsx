@@ -39,7 +39,7 @@ class Course extends React.Component {
                     <i className="mdi mdi-format-quote-open" />
                   </div>
                   <img
-                    src="images/Slider/img-1.jpg"
+                    src="images/courses/course-1.jpg"
                     alt=""
                     className="img-fluid mx-auto d-block"
                   />
@@ -77,7 +77,7 @@ class Course extends React.Component {
                     <i className="mdi mdi-format-quote-open" />
                   </div>
                   <img
-                    src="images/Slider/img-1.jpg"
+                    src="images/courses/course-2.jpg"
                     alt=""
                     className="img-fluid mx-auto d-block"
                   />
@@ -114,7 +114,7 @@ class Course extends React.Component {
                     <i className="mdi mdi-format-quote-open" />
                   </div>
                   <img
-                    src="images/Slider/img-1.jpg"
+                    src="images/courses/course-3.jpg"
                     alt=""
                     className="img-fluid mx-auto d-block"
                   />

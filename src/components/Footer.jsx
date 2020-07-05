@@ -11,44 +11,60 @@ class Footer extends React.Component {
               <div className="mb-4">
                 <Link to="#">
                   <img
-                    src="images/logo-light.png"
+                    src="images/logo-bss.png"
                     alt=""
                     className="logo-light"
-                    height="22"
+                    height="40"
                   />
                 </Link>
                 <a href="layout-two-1">
                   <img
-                    src="images/logo-dark.png"
+                    src="images/logo-bss.png"
                     alt=""
                     className="logo-dark"
-                    height="22"
+                    height="40"
                   />
                 </a>
               </div>
               <p className="footer-desc f-15">
-                Your Trusted Partner In Stock Treading.
+                Your Trusted Partner In Stock Trading.
               </p>
               <ul className="footer-icons list-inline f-20 mb-0 mt-4">
                 <li className="list-inline-item mr-3">
-                  <Link to="#">
+                  <a
+                    href="https://web.facebook.com/simpletradingid"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="mdi mdi-facebook"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li className="list-inline-item mr-3">
-                  <Link to="#">
+                  <a
+                    href="https://www.instagram.com/simpletradingid"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="mdi mdi-instagram"></i>
-                  </Link>
+                  </a>
                 </li>
                 <li className="list-inline-item mr-3">
-                  <Link to="#">
-                    <i className="mdi mdi-tumblr"></i>
-                  </Link>
+                  <a
+                    href="https://twitter.com/simpletradingid"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <i className="mdi mdi-twitter"></i>
+                  </a>
                 </li>
                 <li className="list-inline-item">
-                  <Link to="#">
+                  <a
+                    href="https://www.youtube.com/channel/UCRCyh7Ej10kirpVQa8fWirg"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <i className="mdi mdi-youtube"></i>
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
